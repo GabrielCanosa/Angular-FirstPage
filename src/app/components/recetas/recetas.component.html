@@ -1,0 +1,16 @@
+<h2>Recetas</h2>
+
+<div class="card-columns">
+
+  <div class="card animated fadeIn fast" *ngFor="let receta of recetas; let i = index">
+    <div class="item">
+        <img [src]="receta.img" class="card-img-top" alt="...">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{receta.nombre}}</h5>
+      <p class="card-text">Receta creada por: {{receta.chef}}</p>
+      <button (click)="verReceta(i)" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+    </div>
+  </div>
+
+</div>

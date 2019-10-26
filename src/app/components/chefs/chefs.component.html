@@ -1,0 +1,15 @@
+<h2>Hall of <strong>chefs</strong></h2>
+
+<div class="card-columns">
+
+    <div class="card animated fadeIn fast" *ngFor="let chef of chefs; let i = index">
+      <div class="item">
+          <img [src]="chef.img" class="card-img-top" alt="...">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{chef.nombre}}</h5>
+        <button (click)="verChef(i)" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+      </div>
+    </div>
+  
+  </div>

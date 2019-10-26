@@ -1,0 +1,16 @@
+<br />
+<div class="text-center">
+  <div class="item">
+      <img [src]="receta.img" class="card-img-top" alt="..." style="max-width: 400px; max-height: 500px;">
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">{{receta.nombre}}</h1>
+    <!-- <p class="card-text">{{receta.ingredientes}}</p> -->
+    <ul class="list-unstyled">
+      <li *ngFor="let item of ingredientes">{{item}}</li>
+    </ul>
+    <p class="card-text">{{receta.preparacion}}</p>
+    <p class="card-text">{{receta.chef}}</p>
+    <button (click)="Regresar()" type="button" class="btn btn-outline-danger">Regresar</button>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.tachar{
+    text-decoration:line-through;
+}
+
+.text-center{
+    height: 296px;
+    max-height: 296px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contactame{
+    text-align: center;
+}
+
+.ps{
+    text-align: center;   
+}
